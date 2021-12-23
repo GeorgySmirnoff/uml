@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='ru'>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- позволяет делать сайт адаптивным -->
+		<script src="/js/script.js"></script>
+		<link rel="stylesheet" href="css/style2.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+		<title>Gogo Pizza</title>
+	</head>
+	<body>
+		<div class="wrapper"><!--элементы лежащие внутри него, при выходе за границы "wrapper'a", не выступали -->
+			<header class="header">
+				<div class="header__container">
+					<a href="index.html" class="logo"><img  src="https://user80515.clients-cdnnow.ru/2b-ru/1601564989213_392x320.jpeg" height="80px" alt=""></a>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="sales.html" class="menu__link">Акции</a>
+						</li>
+						<li class="menu__item">
+							<a href="pizza.html" class="menu__link">Пицца</a>
+						</li>
+						<li class="menu__item">
+							<a href="drinks.html" class="menu__link">Напитки</a>
+						</li>
+						<li class="menu__item">
+							<a href="createpizza.html" id="createPizza" class="menu__link">Создать пиццу</a>
+						</li>
+					</ul>
+					<div class="header__entrance">
+						<a href="" class="header__entrance_button">
+							Войти
+						</a>
+						<a href="basket.html" class="header__basket">
+							<img src="img/basket-full.svg" class="basketFull">
+						</a>
+						<a href="basket.html" class="header__price">
+							0 руб.
+						</a>
+						<a href="basket.html" class="header__arrow">
+							<img src="img/arrow-down.svg" class="arrowDown">
+						</a>
+						<a class="header__burger_menu">
+							<img src="https://www.clipartmax.com/png/middle/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png" width='30px' alt="">
+						</a>
+					</div>
+				</div>
+			</header>
+
+			<main class="main__container">
+
+                <form class="form" caction="action_page.php">
+                    <div class="container">
+                    <h1>Оформление заказа</h1>
+                    <p>Пожалуйста заполните форму для доставки</p>
+                    <hr>
+                
+                    <label for="address1"><b>Улица</b></label>
+                    <input id="address1" type="text" placeholder="Введите улицу" required="required">
+                
+                    <label for="address2"><b>Номер дома</b></label>
+                    <input id="address2" type="text" placeholder="Введите номер дома" required="required">
+                
+                    <label for="address3"><b>Номер квартиры</b></label>
+                    <input type="text" placeholder="Введите номер квартиры" name="flat" required>
+                    <hr>
+
+                    <button id="my_create_order" type="submit" class="registerbtn">Оформить заказ</button>
+                    </div>
+                
+                </form>
+			</main>
+
+			
+
+			<footer class="footer">
+				<div class="footer__container">
+					<a href="#" class="logo"><img  src="/img/google_play_logo.png" alt=""></a>
+					<!-- <a href="#" class="logo"><img  src="/img/apple_logo.png" height="80px" alt=""></a> -->
+					<span>Среднее время доставки 30 минут</span>
+					<div class="social_platforms">
+						<a href="#" class="logo"><img  src="https://i.pinimg.com/originals/d4/0e/1e/d40e1ed6bc563a0eb5fd06cee0d1ac37.jpg" alt=""></a>
+						<a href="#" class="logo"><img  src="/img/facebook_logo.png" alt=""></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+		<script src="js/script5.js"></script>
+		<script src="js/scriptEntrance.js.js"></script>
+        <script src="js/script6.js"></script>
+	</body>
+</html>
